@@ -21,8 +21,8 @@ li {
 
 .menu {
   position: absolute;
-  top: 15px;
-  left: 1200px;
+  top: 1%;
+  left: 80%;
 }
 
 .kakoyto_text {
@@ -232,7 +232,7 @@ a:focus:after {
   float: right;
   position: absolute; 
   top: 500px; 
-  left: 1419px;
+  right: 0%;
 }
 
 .hot-bar-2-line {
@@ -340,7 +340,7 @@ to {opacity: 1;}
 }
 
 @keyframes anim_right {
-from {left:100%;opacity: 0;}
+from {right:-100%;opacity: 0;}
 to {right:0%;opacity: 1;}
 }
 
