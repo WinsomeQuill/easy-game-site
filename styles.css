@@ -1,6 +1,12 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Open Sans;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(fonts/OpenSans-Regular.ttf);
 }
 
 body {
@@ -19,7 +25,12 @@ li {
   margin-right:15px;
 }
 
+.button_next {
+  text-align: center;
+}
+
 .menu {
+  animation:anim_hidden 2s;
   position: absolute;
   top: 1%;
   left: 80%;
@@ -31,7 +42,6 @@ li {
   margin: 0;
   padding: 0;
   color: #009191;
-  font-family: Arial;
   font-size: 30px;
   text-align: center;
   position: relative;
@@ -87,7 +97,7 @@ li {
   color: #cad900;
 }
 
-#menu_link {
+.menu_link {
   transition: 1s;
   color: #00994d;
 }
@@ -153,6 +163,7 @@ a:focus:after {
   position: absolute;
   top:0;
 
+  text-align: center;
   line-height: 5.0;
   margin: 0px;
   background-color: #363636;
@@ -174,7 +185,7 @@ a:focus:after {
   top: 46px; 
 }
 
-#hot-bar-1-text {
+.hot-bar-1-text {
   text-align: center;
   border-width: 100px;
   color: rgba(200, 200, 200, 100);
@@ -209,7 +220,7 @@ a:focus:after {
   top: 0px; 
 } 
 
-#hot-bar-2-text {
+.hot-bar-2-text {
   text-align: center;
   border-width: 100px;
   color: rgba(200, 200, 200, 100);
@@ -244,7 +255,7 @@ a:focus:after {
   top: -488px; 
 }  
 
-#hot-bar-3-text {
+.hot-bar-3-text {
   text-align: center;
   border-width: 100px;
   color: rgba(200, 200, 200, 100);
@@ -281,6 +292,7 @@ a:focus:after {
 } 
 
 .section-one {
+  height: 500px;
   background-image: url(imgs/background1.jpg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -288,6 +300,7 @@ a:focus:after {
 }
 
 .section-two {
+  height: 500px;
   background-image: url(imgs/1866.jpg); 
   background-repeat: no-repeat;
   background-size: auto;
@@ -295,6 +308,7 @@ a:focus:after {
 }
 
 .section-three {
+  height: 500px;
   background-image: url(imgs/thumb-1920-818827.png); 
   background-repeat: no-repeat;
   background-size: auto;
@@ -305,7 +319,6 @@ a:focus:after {
 .welcome-text {
   animation:anim_hidden 2s;
   color: #009191;
-  font-family: Arial;
   font-size: 36px;
   text-align: center;
 }
@@ -314,13 +327,13 @@ button {
   margin: 20px;
 }
 .custom-btn {
+  animation:anim_hidden 2s;
   top: 210px;
   width: 130px;
   height: 40px;
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
@@ -351,6 +364,7 @@ to {right:0%;opacity: 1;}
 
 /* 15 */
 .btn-15 {
+  color: white;
   background: #b621fe;
   border: none;
   z-index: 1;
