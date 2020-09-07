@@ -4,25 +4,25 @@
 		<title>Welcome!</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styles.css">
-		<link rel="shortcut icon" href="/imgs/favicon.png" type="image/png">
+		<link rel="shortcut icon" href="img/favicon.png" type="image/png">
 	</head>
 	<body>
 		<header>
 		   	<section>
 		   		<div class="menu">
-		   			<a name="page-home"></a>
 			   		<ul>
-					    <li><a class="menu_link" href="#">Home</a></li>
-					    <li><a class="menu_link" href="#page-one">One</a></li>
-					    <li><a class="menu_link" href="#page-two">Two</a></li>
-					    <li><a class="menu_link" href="https://github.com/WinsomeQuill/easy-site">GitHub</a></li>
-					    <li><a class="menu_link" href="https://vk.com/winsomequill">Author</a></li>
+					    <li><a class="menu_link link" href="#page-one">Home</a></li>
+					    <li><a class="menu_link link" href="#page-two">Two</a></li>
+					    <li><a class="menu_link link" href="#page-three">Three</a></li>
+					    <li><a class="menu_link link" href="https://github.com/WinsomeQuill/easy-site">GitHub</a></li>
+					    <li><a class="menu_link link" href="https://vk.com/winsomequill">Author</a></li>
 				  	</ul>
 			  	</div>
 		   	</section>
 		</header>
 		<main>
 			<section class="section-one">
+				<a name="page-one"></a>
 				<div class="welcome-text"><h3>Welcome to Site!</h3></div>
 				<div class="kakoyto_text">
 					<h4>Вы попали на самый крутой сайт 2020</h4>
@@ -30,23 +30,22 @@
 					<h4>И хочу сказать, что я потратил 4 часа чтобы выучить основы...</h4>
 					<h4>...CSS и HTML и бла бла бла бла бла... бла.</h4>
 				</div>
-				<div class="button_next"> 
-					<button class="custom-btn btn-15"><a href="#page-one">NEXT</a></button>
-				</div>
+				<a href="#page-two" class="button-one-position"><button class="button-interface">NEXT</button></a>
 				<div class="hot-bar-1">
 					<h1 class="hot-bar-1-text">Что это?</h1>
 					<h5 class="hot-bar-1-text">Это сайт, логично да?</h5>
 					<h1 class="hot-bar-1-text">Сайт работает?</h1>
 					<h5 class="hot-bar-1-text">Если вы это читаете, то да.</h5>
 					<h1 class="hot-bar-1-text">Кто автор?</h1>
-					<h5 class="hot-bar-1-text">Автор <a id="author_link" href="https://winsomequill">WinsomeQuill (кликни)</a></h5>
+					<h5 class="hot-bar-1-text">Автор <a class="author_link link" href="https://winsomequill">WinsomeQuill (кликни)</a></h5>
 					<h1 class="hot-bar-1-text">Можно скачать?</h1>
-					<h5 class="hot-bar-1-text">Да, скачать - <a id="author_link" href="https://github.com/WinsomeQuill/easy-site">GitHub</a></h5>
-					<div class="hot-bar-1-line">
+					<h5 class="hot-bar-1-text">Да, скачать - <a class="author_link link" href="https://github.com/WinsomeQuill/easy-site">GitHub</a></h5>
+					<div class="hot-bar-1-line"/>
 				</div>
 			</section>
 			<section class="section-two">
-				<a name="page-one"></a>
+				<a name="page-two"></a>
+				<a href="#page-three" class="button-two-position"><button class="button-interface">NEXT</button></a>
 				<div class="hot-bar-2">
 					<h1 class="hot-bar-2-text">Заголовок</h1>
 					<h5 class="hot-bar-2-text">Описание</h5>
@@ -56,11 +55,16 @@
 					<h5 class="hot-bar-2-text">Описание</h5>
 					<h1 class="hot-bar-2-text">Заголовок</h1>
 					<h5 class="hot-bar-2-text">Описание</h5>
-					<div class="hot-bar-2-line">
+					<div class="hot-bar-2-line"/>
 				</div>
 			</section>
 			<section class="section-three">
-				<a name="page-two"></a>
+				<a name="page-three"></a>
+				<a href="#page-one" class="button-three-position">
+					<button class="button-back-interface" >
+						<img id="button-back-img" src="img/arrow-up.jpg" alt="submit" />
+					</button>
+				</a>
 				<div class="hot-bar-3">
 					<h1 class="hot-bar-3-text">Заголовок</h1>
 					<h5 class="hot-bar-3-text">Описание</h5>
@@ -70,16 +74,16 @@
 					<h5 class="hot-bar-3-text">Описание</h5>
 					<h1 class="hot-bar-3-text">Заголовок</h1>
 					<h5 class="hot-bar-3-text">Описание</h5>
-					<div class="hot-bar-3-line">
+					<div class="hot-bar-3-line"/>
 				</div>
 			</section>
 		</main>
 		<footer>
 			<section>
 				<div class="footer-bar">
-					<h3 id="footer-bar-text">Created by <a id="author_link" href="https://vk.com/winsomequill">WinsomeQuill</a> ©2020</h3>
+					<h3 id="footer-bar-text">Created by <a class="author_link link" href="https://vk.com/winsomequill">WinsomeQuill</a> ©2020</h3>
 					<h5 id="footer-bar-text2">Тут ваши права и прочее... 2020</h5>
-					<div class="footer-bar-line">
+					<div class="footer-bar-line"/>
 				</div>
 			</section>
 		</footer>

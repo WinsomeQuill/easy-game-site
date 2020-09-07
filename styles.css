@@ -48,51 +48,12 @@ li {
   top: 25%;
 }
 
-@keyframes colors {
-  100%,0%{
-      color: rgb(255,0,0);
-    }
-    8%{
-      color: rgb(255,127,0);
-    }
-    16%{
-      color: rgb(255,255,0);
-    }
-    25%{
-      color: rgb(127,255,0);
-    }
-    33%{
-      color: rgb(0,255,0);
-    }
-    41%{
-      color: rgb(0,255,127);
-    }
-    50%{
-      color: rgb(0,255,255);
-    }
-    58%{
-      color: rgb(0,127,255);
-    }
-    66%{
-      color: rgb(0,0,255);
-    }
-    75%{
-      color: rgb(127,0,255);
-    }
-    83%{
-      color: rgb(255,0,255);
-    }
-    91%{
-      color: rgb(255,0,127);
-    }
-}
-
-#author_link {
+.author_link {
   transition: 3s;
   color: #00994d;
 }
 
-#author_link:hover {
+.author_link:hover {
   transition: 3s;
   color: #cad900;
 }
@@ -102,37 +63,36 @@ li {
   color: #00994d;
 }
 
-#menu_link:hover {
+.menu_link:hover {
   transition: 1s;
   color: #cad900;
 }
 
-a {
-    display: inline-block;
-    color:#ffeb3b;
-    line-height: 1;
-    text-decoration:none;
-    cursor: pointer;
-    position:relative;
+.link {
+  display: inline-block;
+  line-height: 1;
+  text-decoration:none;
+  cursor: pointer;
+  position:relative;
 }
-a:after {
-    background-color: #ffeb3b;
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    left:50%;
-    position:absolute;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-    -webkit-transform:translateX(-50%);
-    -moz-transform:translateX(-50%);
-    transform:translateX(-50%);
+.link:after {
+  background-color: #ffeb3b;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  left:50%;
+  position:absolute;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform:translateX(-50%);
+  -moz-transform:translateX(-50%);
+  transform:translateX(-50%);
 }
-a:hover:after,
-a:focus:after {
-    width: 100%;
+.link:hover:after, 
+.link:focus:after {
+  width: 100%;
 }
 
 #footer-bar-text {
@@ -185,19 +145,13 @@ a:focus:after {
   top: 46px; 
 }
 
-.hot-bar-1-text {
-  text-align: center;
-  border-width: 100px;
-  color: rgba(200, 200, 200, 100);
-}
-
 .hot-bar-1 {
   animation:anim_left 0s;
   animation-duration: 1s;
+  transition: 1s;
   width: 200px;
   height: 200px;
   position: absolute;
-  top:0;
 
   line-height: 3.3;
   margin: 0px;
@@ -211,6 +165,11 @@ a:focus:after {
   left: 0px;
 }
 
+.hot-bar-1:hover {
+  transition: 1s;
+  width: 370px;
+}
+
 .hot-bar-1-line {
   background-color: #00994d;
   width: 5px;
@@ -218,21 +177,21 @@ a:focus:after {
   float: left; 
   position: absolute; 
   top: 0px; 
-} 
+}
 
-.hot-bar-2-text {
+.hot-bar-1-text {
   text-align: center;
   border-width: 100px;
   color: rgba(200, 200, 200, 100);
-}
+} 
 
 .hot-bar-2 {
   animation:anim_right 0s;
   animation-duration: 1s;
+  transition: 1s;
   width: 200px;
   height: 200px;
   position: absolute;
-  top:0;
 
   line-height: 3.3;
   margin: 0px;
@@ -246,6 +205,11 @@ a:focus:after {
   right: 0%;
 }
 
+.hot-bar-2:hover {
+  transition: 1s;
+  width: 370px;
+}
+
 .hot-bar-2-line {
   background-color: #00994d;
   width: 5px;
@@ -255,7 +219,7 @@ a:focus:after {
   top: -488px; 
 }  
 
-.hot-bar-3-text {
+.hot-bar-2-text {
   text-align: center;
   border-width: 100px;
   color: rgba(200, 200, 200, 100);
@@ -264,11 +228,11 @@ a:focus:after {
 .hot-bar-3 {
   animation:anim_left 0s;
   animation-duration: 1s;
+  transition: 1s;
   width: 200px;
   height: 200px;
   background:red;
   position: absolute;
-  top:0;
 
   line-height: 3.3;
   margin: 0px;
@@ -282,6 +246,11 @@ a:focus:after {
   left: 0px;
 } 
 
+.hot-bar-3:hover {
+  transition: 1s;
+  width: 370px;
+}
+
 .hot-bar-3-line {
   background-color: #00994d;
   width: 5px;
@@ -291,9 +260,15 @@ a:focus:after {
   top: -488px; 
 } 
 
+.hot-bar-3-text {
+  text-align: center;
+  border-width: 100px;
+  color: rgba(200, 200, 200, 100);
+}
+
 .section-one {
   height: 500px;
-  background-image: url(imgs/background1.jpg);
+  background-image: url(img/background1.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -301,7 +276,7 @@ a:focus:after {
 
 .section-two {
   height: 500px;
-  background-image: url(imgs/1866.jpg); 
+  background-image: url(img/1866.jpg); 
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -309,7 +284,7 @@ a:focus:after {
 
 .section-three {
   height: 500px;
-  background-image: url(imgs/thumb-1920-818827.png); 
+  background-image: url(img/thumb-1920-818827.png); 
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -323,27 +298,75 @@ a:focus:after {
   text-align: center;
 }
 
-button {
-  margin: 20px;
+.button-one-position {
+  position: absolute;
+  top: 430px;
+  left: 50%;
 }
-.custom-btn {
+
+.button-two-position {
+  position: absolute;
+  top: 930px;
+  left: 50%;
+}
+
+.button-three-position {
+  position: absolute;
+  top: 1360px;
+  left: 85%;
+}
+
+.button-interface {
   animation:anim_hidden 2s;
-  top: 210px;
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
+  width: 120px;
+  height: 50px;
+  background: none;
+  color: #00994d;
+  border: 2px solid #1a1a1a;
+  text-align: center;
+  text-decoration: none;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button-interface:hover {
+  color: #cad900;
+  background: #1a1a1a;
+  border-radius: 24px;
+}
+
+.button-back-interface {
+  animation:anim_hidden 2s;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background: none;
+  color: #00994d;
+  border: 2px solid #1a1a1a;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.button-back-interface:hover {
+  color: #cad900;
+  background: #1a1a1a;
+  width: 120px;
+  height: 120px;
+}
+
+#button-back-img {
+  width: 100%;
+  height: 100%;
 }
 
 /*Anims*/
@@ -362,35 +385,41 @@ from {left:-100%;opacity: 0;}
 to {right:0%;opacity: 1;}
 }
 
-/* 15 */
-.btn-15 {
-  color: white;
-  background: #b621fe;
-  border: none;
-  z-index: 1;
-}
-.btn-15:after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #663dff;
-  border-radius: 5px;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  transition: all 0.3s ease;
-}
-.btn-15:hover {
-  color: #fff;
-}
-.btn-15:hover:after {
-  left: 0;
-  width: 100%;
-}
-.btn-15:active {
-  top: 230px;
+@keyframes colors {
+  100%,0%{
+      color: rgb(255,0,0);
+    }
+    8%{
+      color: rgb(255,127,0);
+    }
+    16%{
+      color: rgb(255,255,0);
+    }
+    25%{
+      color: rgb(127,255,0);
+    }
+    33%{
+      color: rgb(0,255,0);
+    }
+    41%{
+      color: rgb(0,255,127);
+    }
+    50%{
+      color: rgb(0,255,255);
+    }
+    58%{
+      color: rgb(0,127,255);
+    }
+    66%{
+      color: rgb(0,0,255);
+    }
+    75%{
+      color: rgb(127,0,255);
+    }
+    83%{
+      color: rgb(255,0,255);
+    }
+    91%{
+      color: rgb(255,0,127);
+    }
 }
