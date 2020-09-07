@@ -268,7 +268,7 @@ li {
 
 .section-one {
   height: 500px;
-  background-image: url(img/background1.jpg);
+  background-image: url(imgs/background1.jpg);
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -276,7 +276,7 @@ li {
 
 .section-two {
   height: 500px;
-  background-image: url(img/1866.jpg); 
+  background-image: url(imgs/1866.jpg); 
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
@@ -284,7 +284,7 @@ li {
 
 .section-three {
   height: 500px;
-  background-image: url(img/thumb-1920-818827.png); 
+  background-image: url(imgs/thumb-1920-818827.png); 
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: fixed;
